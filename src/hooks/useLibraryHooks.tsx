@@ -9,7 +9,7 @@ import {
 import { Book } from '../shared/types/Types';
 import { useCallback, useState } from 'react';
 
-const bookInitialValues: Book = {
+export const BOOK_INITIAL_VALUES: Book = {
   id: 0,
   title: '',
   genre: '',
@@ -40,8 +40,8 @@ function useLibraryHooks() {
   const [openUpdateBook, setOpenUpdateBook] = useState(false);
   const [openViewBook, setOpenViewBook] = useState(false);
 
-  const [bookToBeModified, setBookToBeModified] = useState(bookInitialValues);
-  const [bookToBeViewed, setBookToBeViewed] = useState(bookInitialValues);
+  const [bookToBeModified, setBookToBeModified] = useState(BOOK_INITIAL_VALUES);
+  const [bookToBeViewed, setBookToBeViewed] = useState(BOOK_INITIAL_VALUES);
 
   const handleAddNewBookButton = () => {
     setOpenAddBook(true);
@@ -58,7 +58,7 @@ function useLibraryHooks() {
 
   const handleUpdateBookModalClose = () => {
     setOpenUpdateBook(false);
-    setBookToBeModified(bookInitialValues);
+    setBookToBeModified(BOOK_INITIAL_VALUES);
   };
 
   const handleViewBookAction = (book: Book) => {
@@ -68,7 +68,7 @@ function useLibraryHooks() {
 
   const handleviewBookModalClose = () => {
     setOpenViewBook(false);
-    setBookToBeViewed(bookInitialValues);
+    setBookToBeViewed(BOOK_INITIAL_VALUES);
   };
 
   const handleDeleteBook = useCallback(

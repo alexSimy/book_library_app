@@ -55,6 +55,11 @@ type AddNewBookButtonProps = {
   onClick: () => void;
 };
 
+type ModalFormTexts = {
+  titleText: string;
+  buttonText: string;
+};
+
 export type {
   ErrorProps,
   Book,
@@ -67,4 +72,5 @@ export type {
   BookFormProps,
   BookDetailsModalProps,
   AddNewBookButtonProps,
+  ModalFormTexts,
 };
