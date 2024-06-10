@@ -16,7 +16,7 @@ import type {
   ModalFormTexts,
 } from '../../shared/types/Types';
 import validationSchema from '../../schemas/BookFormSchema';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { StaticTextsContext } from '../../routes/RootLayout/RootLayout';
 import { CloseSharp } from '@mui/icons-material';
 
