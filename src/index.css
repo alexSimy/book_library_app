@@ -2,22 +2,49 @@
   box-sizing: border-box;
 }
 
-:root {
+body {
   min-height: 100vh;
-  font-family: Arial;
+  font-family: 'roboto';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1rem;
-  line-height: 1.5rem;
   font-weight: 400;
-  background-image: #fff;
+  background: linear-gradient(
+      165deg,
+      rgba(29, 35, 39, 1) 0%,
+      rgba(15, 18, 20, 1) 100%
+    )
+    fixed;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  margin: 0;
+  color: #fff;
 }
 
-body {
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(64, 75, 82); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(45, 59, 68);
+  border-radius: 0.5rem;
+  border: none;
+}
+
+a {
+  color: #fff;
+}
+
+#root {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }

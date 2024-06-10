@@ -1,0 +1,13 @@
+.description textarea::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.description textarea::-webkit-scrollbar-track {
+  background: rgb(64, 75, 82); /* color of the tracking area */
+}
+
+.description textarea::-webkit-scrollbar-thumb {
+  background-color: rgb(45, 59, 68);
+  border-radius: 0.5rem;
+  border: none;
+}

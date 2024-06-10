@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navWrap {
+  display: flex;
+  width: 100%;
+  transition: all ease 1s;
+  border-bottom: 0.25rem solid #fff;
+  border-radius: 24px;
+}
+
+.navContent .logo {
+  display: inline-flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  float: left;
+  height: 3rem;
+  margin-top: 1rem;
+}
+
+.navContent .navListWrapper {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.navContent .navListWrapper a {
+  text-decoration: none;
+}

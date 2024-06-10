@@ -1,0 +1,66 @@
+.mainContentWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 8rem 2rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 460px) {
+  .mainContentWrapper {
+    margin: 8rem 0;
+  }
+}
+
+.imageCanvas {
+  display: flex;
+  justify-content: center;
+  flex: none;
+  min-width: 240px;
+  max-width: 20rem;
+  margin: 0 4rem;
+}
+
+.imageCanvas img {
+  transform: rotate(5deg);
+  width: 15rem;
+  transition: width ease 1s;
+}
+
+@media screen and (max-width: 460px) {
+  .imageCanvas img {
+    width: 10rem;
+  }
+}
+
+.description {
+  display: flex;
+  flex: 1;
+  min-width: 240px;
+  max-width: 40rem;
+  margin: 4rem;
+  font-size: 1.3rem;
+  text-align: justify;
+  word-break: break-word;
+  word-spacing: -1px;
+  letter-spacing: -1px;
+}
+
+@media screen and (max-width: 460px) {
+  .description {
+    font-size: 1rem;
+  }
+}
+
+.description div {
+  text-indent: 2rem;
+}
+
+.description a {
+  text-decoration: none;
+}
+.description a:hover {
+  text-decoration: underline;
+}

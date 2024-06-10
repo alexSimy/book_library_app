@@ -1,7 +1,6 @@
 # Bookfellow App
 
-Client application that allows you managa your book collection
-
+Client application that allows you manage your book collection.
 
 ## Available Scripts
 
@@ -15,33 +14,32 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Short User Manual
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The Bookfellow application has two pages: 
+- **Home Page** page, that explains the brand and ca be found on [http://localhost:3000](http://localhost:3000). From this page, the user can access the **Library Page** page by clicking the **Check Your Library** link from the header.
+![Home Page](image.png)
 
-### `npm run eject`
+- **Library** page, that provides the management part of the book collection. 
+![Library Page](image-1.png)
+  - Here the user can 
+    - **Delete** a book by clicking on the *trash* button ![delete](image-2.png)
+    - **Modify** the details of a  book by clicking on the *pen* button ![modify](image-3.png)
+  
+  ![Modify Form](image-5.png)
+  
+    - **Add a new book** by clicking on the *Add New Book* button ![alt text](image-4.png) and then 
+  
+  ![Add New Book Form](image-6.png)
+    - **See Details** of a book by clicking on the book card.
+  
+  ![Book Details](image-7.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Static Texts
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+All the client application texts are comming from `src/assets/static/text/static-text.json` and should be moved in a DB that can provide/store the necessary translations text.

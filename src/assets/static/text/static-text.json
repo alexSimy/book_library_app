@@ -1,0 +1,44 @@
+{
+  "homePageTexts" : [
+    "In January 1899, H.C. O'Neill printed \"The Bookfellow Magazine\" for the first time, hoping to promote and develop Australian literature by providing a platform for both emerging and established Australian authors to publish their works, thus fostering a national literary identity.",
+    "Now, in the same spirit, Bookfellow helps you manage your book collection in any way you see fit. Now, in the same spirit, Bookfellow helps you manage your book collection in any way you see fit. Click on My Library in order to start organizing your books."
+  ],
+  "modalFormTexts": {
+    "add": {
+      "title": "Add New Book",
+      "buttonText": "Submit New Book"
+    },
+    "update": {
+      "title": "Modify Book",
+      "buttonText": "Submit Updates"
+    },
+    "titleSection" : {
+      "titleText": "Book Title",
+      "titlePlaceholderText": "One Flew Over the Cuckoo's Nest"
+
+    },
+    "genreSection" : {
+      "genreText": "Genre Type",
+      "genrePlaceholderText": "Tragedy"
+
+    },
+    "authorSection" : {
+      "authorText": "Author Name",
+      "authorPlaceholderText": "Ken Kesey"
+
+    },
+    "descriptionSection" : {
+      "descriptionText": "Description",
+      "descriptionPlaceholderText": "Ken Kesey wrote the One Flew Over the Cuckoo's Nest book"
+
+    }
+  },
+  "homePageLibraryButton": "Check Your Library",
+  "addNewBookButton": "Add New Book",
+  "cardDetails": {
+    "authorText": "Author",
+    "genreText": "Genre",
+    "descriptionText": "Description"
+  },
+  "footerText": "© Bookfellow, Cluj, 2024"
+}
