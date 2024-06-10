@@ -5,11 +5,11 @@
   ],
   "modalFormTexts": {
     "add": {
-      "title": "Add New Book",
+      "titleText": "Add New Book",
       "buttonText": "Submit New Book"
     },
     "update": {
-      "title": "Modify Book",
+      "titleText": "Modify Book",
       "buttonText": "Submit Updates"
     },
     "titleSection" : {

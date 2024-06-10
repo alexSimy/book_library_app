@@ -10,7 +10,11 @@ import {
   Typography,
 } from '@mui/material';
 
-import type { BookFormProps, Book } from '../../shared/types/Types';
+import type {
+  BookFormProps,
+  Book,
+  ModalFormTexts,
+} from '../../shared/types/Types';
 import validationSchema from '../../schemas/BookFormSchema';
 import { useContext } from 'react';
 import { StaticTextsContext } from '../../routes/RootLayout/RootLayout';
@@ -18,6 +22,7 @@ import { CloseSharp } from '@mui/icons-material';
 
 import { ThemeProvider } from '@emotion/react';
 import formTheme from '../../shared/themes/ModalBookFormTheme';
+import { BOOK_INITIAL_VALUES } from '../../hooks/useLibraryHooks';
 import styles from './ModalBookForm.module.css';
 
 function ModalBookForm({
@@ -29,33 +34,11 @@ function ModalBookForm({
 }: BookFormProps): React.JSX.Element {
   const staticTexts = useContext(StaticTextsContext);
 
-  let titleText = '';
-  let buttonText = '';
+  const { titleText, buttonText }: ModalFormTexts = Object.entries(
+    staticTexts.modalFormTexts
+  ).filter(([key, value]) => key === 'add')[0][1] as ModalFormTexts;
 
-  switch (operation) {
-    case 'add':
-      titleText = staticTexts.modalFormTexts.add.title;
-      buttonText = staticTexts.modalFormTexts.add.buttonText;
-      break;
-    case 'update':
-      titleText = staticTexts.modalFormTexts.update.title;
-      buttonText = staticTexts.modalFormTexts.update.buttonText;
-      break;
-    default:
-      titleText = staticTexts.modalFormTexts.add.title;
-      buttonText = staticTexts.modalFormTexts.add.buttonText;
-  }
-
-  const initialValues: Book =
-    book && book.id
-      ? book
-      : {
-          id: 0,
-          title: '',
-          genre: '',
-          author: '',
-          description: '',
-        };
+  const initialValues: Book = book && book.id ? book : BOOK_INITIAL_VALUES;
 
   return (
     <Modal
